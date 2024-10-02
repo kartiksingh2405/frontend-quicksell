@@ -1,0 +1,95 @@
+.kanban-board {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    overflow-x: auto;
+    background-color: #e7e7e7;
+  }
+  
+  .kanban-group {
+    flex: 1;
+    background: transparent;
+    padding: 15px;
+  }
+  
+  .group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .group-title-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .status-icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+  
+  .group-title {
+    margin-left: 10px; /* Space between the icon and text */
+    font-size: 16px; /* Font size for the group title */
+    font-weight: 600; /* Bold text */
+    color: #333; /* Text color */
+  }
+  
+  .group-title-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .ticket-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .kanban-group p {
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+  }
+  
+  .ticket-card {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 6px;
+  }
+  
+  .ticket-card h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #333;
+  }
+  
+  .ticket-card p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .icon {
+    height: 20px; /* Uniform icon size */
+    width: 20px;
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  @media (max-width: 800px) {
+    .kanban-board {
+      flex-direction: column;
+    }
+  
+    .kanban-group {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
